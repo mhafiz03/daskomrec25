@@ -142,8 +142,6 @@ async function importShift(file) {
             },
             // Modal "Import Excel"
             async saveImport() {
-                console.log("Selected file:", this.chosenFile);
-
                 if (!this.chosenFile) {
                     alert("No file selected!");
                     return;

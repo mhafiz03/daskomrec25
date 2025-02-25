@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choose Shift</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script>
@@ -92,7 +96,7 @@
             <h1 class="text-2xl md:text-3xl lg:text-3xl">Choose Your Shift</h1>
         </div>
         <!-- Tabel Shift -->
-        <div x-data="manageShift()" x-init="console.log('Alpine Initialized:', $data)"
+        <div x-data="manageShift()"
             class="bg-Table mx-auto my-5 w-[95%] h-full rounded-2xl text-shift text-xs lg:text-xl md:text-xl p-4 sm:p-6 md:p-8">
             <!-- Show Entries & Search -->
             <div class="flex m-5 justify-between h-5 lg:h-8 md:h-8">

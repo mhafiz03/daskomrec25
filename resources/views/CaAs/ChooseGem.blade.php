@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Choose Gem</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
 
@@ -35,7 +39,7 @@
         </div>
 
         {{-- Owl Carousel --}}
-        <div class="owl-carousel owl-theme justify-evenly mx-auto my-4 -translate-x-6">
+        <div class="owl-carousel owl-theme justify-evenly mx-auto my-4">
           @foreach($gems as $gem)
             <div class="relative h-[410px] w-[200px] xs:w-[400px] flex flex-col justify-center items-center mx-auto gem-container">
               <img

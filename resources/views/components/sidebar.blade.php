@@ -39,6 +39,7 @@
                 <li class="h-16 max-w-[232px] mx-auto">
                     <a href="/announcement"
                         class="flex items-center justify-center p-2 text-gray-200 rounded-lg h-full">
+
                         <x-sidebar-button>Announcement</x-sidebar-button>
                     </a>
                 </li>

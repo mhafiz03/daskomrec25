@@ -11,7 +11,6 @@ function hideShift() {
 }
 
 function showChangePass() {
-    console.log("Popup function called");
     document.getElementById('popupChangePass').classList.remove('hidden');
 }
 
@@ -29,7 +28,6 @@ function hideGem() {
 
 function moveCardDown(){
     document.getElementById('firstCard').classList.remove('-translate-y-14');
-    console.log('yeay');
 }
 
 window.showShift = showShift;

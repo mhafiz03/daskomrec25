@@ -18,13 +18,8 @@ DLOR 2025 is a recruitment platform designed to streamline the application proce
 - Admin dashboard for managing recruitment  
 
 ## Team Members  
-**UI/UX Design:**  
 - [Aulia Rahma](https://github.com/pieceofaul) (AUL)  
-
-**Frontend Development:**  
 - [Stevannie Pratama](https://github.com/stevanniep) (SNI)  
 - [Umar Zaki Gunawan](https://github.com/marzkigun27) (UZY)  
-
-**Backend Development:**  
 - [Muhammad Zaenal Abidin Abdurrahman](https://github.com/Zendin110206) (ZEN)  
 - [Muhammad Hafiz](https://github.com/mhafiz03) (MHZ)  

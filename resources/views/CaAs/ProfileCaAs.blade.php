@@ -45,11 +45,11 @@
 @endphp
 
     <!-- Background Image -->
-    <canvas id="webgl-canvas" class="absolute w-screen h-screen top-0 -z-10"></canvas>
+    <canvas id="webgl-canvas" class="fixed w-screen h-screen top-0 -z-10"></canvas>
     <img src="assets/Wall2.webp" alt="Wall" class="fixed left-0 h-full w-auto">
     <img src="assets/Wall-Mobile.webp" alt="Wall" class="fixed inset-0 h-full w-full sm:hidden">
     <img src="assets/Crystal 3.webp" alt="Crystal" class="fixed bottom-0 left-0 h-96 w-auto scale-x-[-1] scale-y-[-1]">
-    <img src="assets/Crystal 5.webp" alt="Crystal" class="fixed bottom-0 z-10 left-36 h-52 w-auto">
+    <img src="assets/Crystal 5.webp" alt="Crystal" class="fixed bottom-0 z-10 left-36 h-52 w-auto sm:w-20">
     <img src="assets/Crystal 2.webp" alt="Crystal" class="fixed top-0 z-10 left-0 h-full w-auto">
     <img src="assets/Shine.webp" alt="Shine" class="fixed bottom-24 z-10 left-5 h-auto w-[70px] sm:w-auto pulsing">
     <img src="assets/Shine.webp" alt="Shine" class="fixed bottom-10 z-10 left-32  h-auto w-[70px] sm:w-auto pulsing">
@@ -59,9 +59,9 @@
         class="fixed bottom-0 -right-14 h-60 w-auto opacity-0 lg:opacity-100 md:opacity-100">
     <img src="assets/Shine.webp" alt="Shine"
         class="fixed bottom-10 right-5 w-[200px] opacity-0 lg:opacity-100 md:opacity-100 pulsing">
-
-    <div class="absolute flex items-center justify-center bg-BlackLayer w-full h-full z-20">
-        <div class="absolute inset-0 text-white text-center mt-24">
+    <div class="fixed inset-0 z-10 w-screen h-screen bg-black bg-opacity-50">sds</div>
+    <div class="fixed flex items-center justify-center w-screen h-screen z-20 scro">
+        <div class="absolute inset-0 text-white text-center mt-20 h-sm:mt-14 h-xs:mt-5">
             <h2 class="font-crimson-text text-xl pb-2">Discover The light within</h2>
             <h1 class="font-im-fell-english text-5xl">Profile</h1>
         </div>

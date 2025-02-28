@@ -18,7 +18,7 @@
   class="bg-Gems bg-cover bg-fixed bg-no-repeat min-h-screen max-w-full scroll-x-hide text-white overflow-hidden cursor-Wand"
 >
   <!-- Background Image -->
-  <img src="assets/Wall2.webp" alt="Wall" class="fixed left-0 h-full w-auto">
+  <img src="assets/Wall2.webp" alt="Wall" class="fixed left-0 h-full w-auto ">
   <img src="assets/Wall-Mobile.webp" alt="Wall" class="fixed inset-0 w-[200px] sm:hidden">
   <img src="assets/Crystal 3.webp" alt="Crystal" class="fixed w-[530px] top-2 -left-[340px]">
   <img src="assets/Shine.webp" alt="Shine" class="fixed w-[150px] top-0 left-0 -rotate-[7deg]">
@@ -30,7 +30,7 @@
   <img src="assets/Sparkle.webp" alt="Dust" class="absolute min-w-max right-0 -top-5 transform scale-x-[-1]">
 
   {{-- Layer Overlay --}}
-  <div class="absolute flex items-center justify-center bg-BlackLayer w-full h-full z-20">
+  <div class="fixed flex items-center justify-center bg-BlackLayer w-screen h-screen z-20">
     <div class="container h-full mx-auto font-im-fell-english max-w-full sm:max-w-[80%] md:max-w-[90%] lg:max-w-[70%]">
       <div class="mt-16 relative justify-center">
         <div class="text-center">
@@ -39,7 +39,7 @@
         </div>
 
         {{-- Owl Carousel --}}
-        <div class="owl-carousel owl-theme justify-evenly mx-auto my-4">
+        <div class="owl-carousel owl-theme justify-evenly mx-auto my-4 h-md:-translate-y-10">
           @foreach($gems as $gem)
             <div class="relative h-[410px] w-[200px] xs:w-[400px] flex flex-col justify-center items-center mx-auto gem-container">
               <img
@@ -57,7 +57,7 @@
         </div>
 
         {{-- Prev / Save / Next Buttons --}}
-        <div class="flex justify-center h-[60px] space-x-2">
+        <div class="flex justify-center h-[60px] space-x-2 h-md:-translate-y-10 h-sm:-translate-y-20">
           <button
             class="owl-prev hover:scale-105 hover:brightness-110 active:scale-95 cursor-Wand"
             type="button"

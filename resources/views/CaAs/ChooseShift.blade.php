@@ -89,8 +89,8 @@
     @if(session('error') || session('success'))
         <x-notification />
     @endif
-
-    <div class="bg-BlackLayer w-full h-full z-30 font-im-fell-english overflow-hidden">
+    <div class="bg-black bg-opacity-50 w-screen h-screen fixed inset-0 -z-10"></div>
+    <div class="w-full h-full z-30 font-im-fell-english overflow-hidden">
         <div class="inset-0 text-white text-center mt-12">
             <h2 class="font-crimson-text text-lg lg:text-xl md:text-xl pb-1 font-bold">Discover the light within</h2>
             <h1 class="text-2xl md:text-3xl lg:text-3xl">Choose Your Shift</h1>

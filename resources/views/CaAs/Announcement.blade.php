@@ -59,7 +59,7 @@
 
     <div class="container max-w-xl mx-auto py-5 font-crimson-text">
         <div class="flex relative justify-center">
-            <img src="assets/Announcement Stone.webp" alt="" class="h-[700px] min-h-max">
+            <img src="assets/AnnouncementStone.png" alt="" class="h-[700px] h-md:h-[600px] h-sm:h-[550px] min-h-max">
             <div class="absolute text-justify mt-28 ml-[160px] mr-[150px]">
                 <h1 class="text-center lg:text-3xl text-3xl font-bold">Announcement</h1>
                 <hr class="mt-2 border-primary w-3/5 mx-auto mb-2 lg:mb-2">
@@ -108,9 +108,9 @@
                 @endif
             </div>
             
-            <div class="absolute bottom-[70px] ml-56">
+            {{-- <div class="absolute bottom-[70px] ml-56">
                 <img src="assets/Sign DLOR.webp" alt="" class="w-[120px]">
-            </div>
+            </div> --}}
         </div>
     </div>
     <x-sidebar></x-sidebar>

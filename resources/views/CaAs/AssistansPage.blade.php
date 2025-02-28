@@ -47,11 +47,11 @@
     <div class="absolute flex items-center justify-center bg-BlackLayer bg-opacity-50 w-full h-full z-20">
         <div class="container max-w-full sm:max-w-[80%] md:max-w-[90%] lg:max-w-[70%] mx-auto font-im-fell-english">
             <div class="relative justify-center">
-                <div class="text-center">
+                <div class="text-center h-sm:translate-y-5">
                     <h1 class="text-2xl font-crimson-text pb-2">Daskom Laboratory</h1>
                     <h1 class="text-4xl">Assistants 2025</h1>
                 </div>
-                <div class="owl-carousel owl-theme justify-evenly mx-auto my-8 -translate-x-4" id="carouselContainer">
+                <div class="owl-carousel owl-theme justify-evenly mx-auto mb-8 -translate-x-4" id="carouselContainer">
                     <div class="relative w-[380px] mx-auto -translate-y-14" id="firstCard">
                         <img src="{{ asset("assets/profilasisten/Asisten (1).webp") }}" alt="Assistant" class="w-[200px]">
                     </div>

@@ -34,25 +34,32 @@
     <div class="container h-full mx-auto font-im-fell-english max-w-full sm:max-w-[80%] md:max-w-[90%] lg:max-w-[70%]">
       <div class="mt-16 relative justify-center">
         <div class="text-center">
-          <h1 class="text-lg font-crimson-text pb-2">Discover the light within</h1>
+          <h1 class="text-lg font-crimson-text pb-2">Discover The Light Within</h1>
           <h1 class="text-3xl">Pick Your Gem</h1>
         </div>
 
         {{-- Owl Carousel --}}
         <div class="owl-carousel owl-theme justify-evenly mx-auto my-4 h-md:-translate-y-10">
           @foreach($gems as $gem)
-            <div class="relative h-[410px] w-[200px] xs:w-[400px] flex flex-col justify-center items-center mx-auto gem-container">
-              <img
-                src="{{ $gem->image ?: asset('assets/noimage.webp') }}"
-                alt="Gem Card"
-                class="max-w-[250px] rounded gem-image"
-              >
-              <p class="mt-2 text-white font-bold text-sm z-20 gem-quota-text">
-                Sisa Quota: {{ $gem->quota }}
-              </p>
-              {{-- Simpan role_id di hidden --}}
-              <input type="hidden" class="gem-id-hidden" value="{{ $gem->id }}">
+          <div class="relative h-[410px] w-[200px] xs:w-[400px] flex flex-col justify-center items-center mx-auto group gem-container">
+            <img
+              src="{{ $gem->image ?: asset('assets/noimage.webp') }}"
+              alt="Gem Card"
+              class="max-w-[250px] rounded gem-image"
+            >
+
+            <div class="absolute inset-0 mx-auto max-w-[250px] bg-black bg-opacity-80 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-20">
+              <!-- DESCRIPTION BUAT GEMMM -->
+              <p class="p-5 text-white text-justify text-sm relative z-10">The Prismatic Dragon controls all forms of elemental magic through its radiant scales that shimmer like the prism’s light. It can manipulate the elements and maintain balance within the cavern's mystical forces. Revered for its elegance and unmatched power, the Prismatic Dragon is adored for its role in keeping peace and harmony within the Crystal Cavern. It's the ultimate protector and guardian.</p>
             </div>
+
+            <p class="mt-2 text-white font-bold text-sm z-20 gem-quota-text">
+              Sisa Quota: {{ $gem->quota }}
+            </p>
+
+            <input type="hidden" class="gem-id-hidden" value="{{ $gem->id }}">
+          </div>
+
           @endforeach
         </div>
 

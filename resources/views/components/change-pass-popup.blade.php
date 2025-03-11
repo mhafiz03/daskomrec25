@@ -15,7 +15,7 @@
             </span>
 
             <div class="text-center mx-auto">
-                <h1 class="lg:text-md md:text-md sm:text-md text-xs font-bold">Discover your light within</h1>
+                <h1 class="lg:text-md md:text-md sm:text-md text-xs font-bold">Discover The Light Within</h1>
                 <p class="lg:text-4xl md:text-3xl text-lg mt-1 md:mt-3 lg:mt-3 font-im-fell-english">Are you sure you want to change password?</p>
             </div>  
             <!-- Tombol Yes & No -->

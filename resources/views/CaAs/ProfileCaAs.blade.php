@@ -62,7 +62,7 @@
     <div class="fixed inset-0 z-10 w-screen h-screen bg-black bg-opacity-50">sds</div>
     <div class="fixed flex items-center justify-center w-screen h-screen z-20 scro">
         <div class="absolute inset-0 text-white text-center mt-20 h-sm:mt-14 h-xs:mt-5">
-            <h2 class="font-crimson-text text-xl pb-2">Discover The light within</h2>
+            <h2 class="font-crimson-text text-xl pb-2">Discover The Light Within</h2>
             <h1 class="font-im-fell-english text-5xl">Profile</h1>
         </div>
         <div class="relative group mt-14">

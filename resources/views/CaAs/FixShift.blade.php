@@ -26,8 +26,8 @@
     <div class="absolute bg-BlackLayer w-full h-full z-20">
         <div class="container mx-auto py-5 font-crimson-text">
             <div class="inset-0 text-white text-center">
-                <h2 class="font-crimson-text text-md lg:text-lg md:text-lg pb-1 font-bold">Discover the light within</h2>
-                <h1 class="text-xl md:text-2xl lg:text-2xl">Choose Your Shift</h1>
+                <h2 class="font-crimson-text text-md lg:text-lg md:text-lg pb-1 font-bold">Discover The Light Within</h2>
+                <h1 class="text-xl md:text-2xl lg:text-2xl">Your Shift For Interview</h1>
             </div>
             <div class="flex relative justify-center -top-10">
                 <img src="assets/Announcement Stone.webp" alt="" class="h-[700px]">
@@ -35,8 +35,8 @@
                 @if ($shift)
                     <p class="lg:text-lg text-base font-bold mb-5">Once you choose a shift, it cannot be changed. Your assigned shift will be displayed below.</p>
 
-                    <p class="ml-3 lg:text-md text-sm font-im-fell-english">Date: {{ Carbon\Carbon::parse($shift->date)->format('l, jS F Y') }}</p>
-                    <p class="ml-3 lg:text-md text-sm font-im-fell-english">Time: {{ substr($shift->time_start, 0, 5) . '-' . substr($shift->time_end, 0, 5) . ' WIB' }}</p>
+                    <p class="ml-3 text-md font-im-fell-english">Date: {{ Carbon\Carbon::parse($shift->date)->format('l, jS F Y') }}</p>
+                    <p class="ml-3 text-md font-im-fell-english">Time: {{ substr($shift->time_start, 0, 5) . '-' . substr($shift->time_end, 0, 5) . ' WIB' }}</p>
 
                     <p class="lg:text-lg text-base font-bold mt-5">Please make sure to remember your assigned shift and stay updated via our OA Line for any upcoming information. Thank you!</p>
                     @else

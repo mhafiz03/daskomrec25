@@ -27,7 +27,7 @@
 
     <div class="absolute flex items-center justify-center bg-BlackLayer w-full h-full z-20">
         <div class="absolute inset-0 text-white text-center mt-24">
-            <h1 class="text-lg font-crimson-text pb-2">Discover the light within</h1>
+            <h1 class="text-lg font-crimson-text pb-2">Discover The Light Within</h1>
             <h1 class="text-3xl font-im-fell-english">Your Active Gem</h1>
         </div>
         <div class="relative group mt-16 mx-14">

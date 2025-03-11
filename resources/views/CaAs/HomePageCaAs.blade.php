@@ -14,12 +14,12 @@
 </head>
 
 <body
-    class="font-im-fell-english min-h-screen bg-HomePageCaAs bg-cover bg-center bg-no-repeat max-w-full overflow-x-hidden ">
+    class="font-im-fell-english min-h-screen bg-HomePageCaAs bg-cover bg-center bg-no-repeat max-w-full overflow-x-hidden scrollbar-hidden">
     <canvas id="webgl-canvas" class="absolute w-screen h-screen top-0 z-0"></canvas>
 
 
     <!-- Background Image -->
-    <div class="fixed inset-0 grid place-items-center z-10 sm:hidden">
+    <div class="fixed inset-0 top-0 grid place-items-center z-10 sm:hidden">
         <img src="assets/Light.webp" alt="upper shine light" class="h-full w-auto opacity-80 ">
     </div>
 
@@ -48,7 +48,7 @@
     <div class="absolute inset-0 flex flex-col items-center justify-center z-40 text-center px-4">
         <h1 class="text-white font-normal text-3xl md:text-5xl sm:text-3xl" id="typewriter"></h1>
         <p class="text-white py-2 text-lg font-bold leading-[32px] font-crimson-text md:text-xl md:leading-[24px] sm:text-sm sm:leading-[20px] fade-up"
-            style="animation-delay: 3.2s">discover the light within</p>
+            style="animation-delay: 3.2s">Discover The Light Within</p>
     </div>
 
     <x-sidebar></x-sidebar>

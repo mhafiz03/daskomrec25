@@ -72,6 +72,15 @@ export default {
                 'h-sm': { 'raw': '(max-height: 600px)' },
                 'h-xs': { 'raw': '(max-height: 510px)' },
             },
+            keyframes: {
+                shine: {
+                    '0%': { transform: 'translateX(-100%)' },
+                    '100%': { transform: 'translateX(100%)' },
+                }
+            },
+            animation: {
+            'shine': 'shine 1.6s ease-out 1',
+            }
         },
     },
     plugins: [],

@@ -12,7 +12,7 @@
 
     <!-- Info SHIFT -->
     <div class="bg-biru-tua rounded-2xl p-4 sm:p-6 mb-6 shadow-md">
-        <p><strong>Shift No:</strong> {{ $shift->shift_no }}</p>
+        <p><strong>Shift:</strong> {{ $shift->shift_no }}</p>
         <p><strong>Date:</strong> {{ $shift->date }}</p>
         <p><strong>Time:</strong> {{ $shift->time_start }} - {{ $shift->time_end }}</p>
         <p><strong>Quota:</strong> {{ $shift->kuota }}</p>

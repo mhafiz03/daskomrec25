@@ -23,7 +23,7 @@
         <!-- Tombol Back -->
         <div>
             <a 
-                href="javascript:history.back()" 
+                href="{{ route('admin.shift') }}"
                 class="bg-biru-tua text-white rounded-[30px] 
                        px-4 py-3 sm:px-6 sm:py-4 
                        hover:opacity-90 hover:shadow-lg transition

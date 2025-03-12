@@ -358,7 +358,7 @@ async function importShift(file) {
                         </th>
                         <th class="py-3 px-3 border-r border-black text-biru-tua
                                    font-im-fell-english text-sm sm:text-base md:text-lg">
-                            Shift No.
+                            Shift
                         </th>
                         <th class="py-3 px-3 border-r border-black text-biru-tua
                                    font-im-fell-english text-sm sm:text-base md:text-lg">
@@ -500,7 +500,7 @@ async function importShift(file) {
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-biru-tua">
                     <!-- Shift No -->
                     <div>
-                        <label class="block text-xl mb-1 text-white">Shift No.</label>
+                        <label class="block text-xl mb-1 text-white">Shift</label>
                         <input 
                             type="text"
                             name="shift_no"
@@ -597,7 +597,7 @@ async function importShift(file) {
             <template x-if="selectedShift">
                 <div class="space-y-3 text-lg">
                     <p><strong>ID:</strong> <span x-text="selectedShift.id"></span></p>
-                    <p><strong>Shift No.:</strong> <span x-text="selectedShift.shiftNo"></span></p>
+                    <p><strong>Shift:</strong> <span x-text="selectedShift.shiftNo"></span></p>
                     <p><strong>Date:</strong> <span x-text="selectedShift.date"></span></p>
                     <p><strong>Time Start:</strong> <span x-text="selectedShift.timeStart"></span></p>
                     <p><strong>Time End:</strong> <span x-text="selectedShift.timeEnd"></span></p>
@@ -654,7 +654,7 @@ async function importShift(file) {
                         </div>
                         <!-- Shift No. -->
                         <div>
-                            <label class="block text-xl mb-1 text-white">Shift No.</label>
+                            <label class="block text-xl mb-1 text-white">Shift</label>
                             <input 
                                 type="text"
                                 name="shift_no"

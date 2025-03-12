@@ -60,16 +60,16 @@
     <div class="container max-w-xl mx-auto py-5 font-crimson-text">
         <div class="flex relative justify-center">
             <img src="assets/AnnouncementStone.png" alt="" class="h-[700px] h-md:h-[600px] h-sm:h-[550px] min-h-max">
-            <div class="absolute text-justify mt-28 ml-[160px] mr-[150px]">
+            <div class="absolute text-justify mt-32 ml-[160px] mr-[150px]">
                 <h1 class="text-center lg:text-3xl text-3xl font-bold">Announcement</h1>
                 <hr class="mt-2 border-primary w-3/5 mx-auto mb-2 lg:mb-2">
                  <!-- Header conditional (Congratulations / Sorry) -->
-                 <h2 class="text-md lg:text-lg font-bold mb-5">
+                 <h2 class="text-md lg:text-lg font-bold mt-5 mb-5">
                     <span class="{{ $headerColor }}">{{ $headerText }},</span>
                     <br>
                     <span class="text-black">{{ $name }}</span>
                 </h2>
-                <p class="text-xs lg:text-sm text-justify font-im-fell-english">
+                <p class="text-sm lg:text-sm text-justify font-im-fell-english">
                     {!! $message !!}
                     <br>
                     <a href="{{ e($link) }}" class="text-blue-500 underline hover:text-blue-700">{{ $link }}</a>

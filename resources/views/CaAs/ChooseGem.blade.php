@@ -38,7 +38,6 @@
           <h1 class="text-3xl">Pick Your Gem</h1>
         </div>
 
-        {{-- Owl Carousel --}}
         <div class="owl-carousel owl-theme justify-evenly mx-auto my-4 h-md:-translate-y-10">
           @foreach($gems as $gem)
           <div class="relative h-[410px] w-[200px] xs:w-[400px] flex flex-col justify-center items-center mx-auto group gem-container">
@@ -50,7 +49,7 @@
 
             <div class="absolute inset-0 mx-auto max-w-[250px] bg-black bg-opacity-80 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-20">
               <!-- DESCRIPTION BUAT GEMMM -->
-              <p class="p-5 text-white text-justify text-sm relative z-10">The Prismatic Dragon controls all forms of elemental magic through its radiant scales that shimmer like the prism’s light. It can manipulate the elements and maintain balance within the cavern's mystical forces. Revered for its elegance and unmatched power, the Prismatic Dragon is adored for its role in keeping peace and harmony within the Crystal Cavern. It's the ultimate protector and guardian.</p>
+              <p class="p-5 text-white text-justify text-sm relative z-10">{{ $gem->description }}</p>
             </div>
 
             <p class="mt-2 text-white font-bold text-sm z-20 gem-quota-text">
@@ -62,6 +61,7 @@
 
           @endforeach
         </div>
+        
 
         {{-- Prev / Save / Next Buttons --}}
         <div class="flex justify-center h-[60px] space-x-2 h-md:-translate-y-10 h-sm:-translate-y-20">
@@ -121,14 +121,15 @@
         0: {
           items: 1,
         },
-        600: {
+        768: {
           items: 2,
         },
-        1000: {
+        1024: {
           items: 3,
         },
       },
       loop: false,
+      autoWidth:false,
       center: true,
       margin: 30, // tambahkan margin biar tidak mepet
       responsiveClass: true,

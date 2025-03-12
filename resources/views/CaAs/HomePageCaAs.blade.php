@@ -19,7 +19,7 @@
 
 
     <!-- Background Image -->
-    <div class="fixed inset-0 top-0 grid place-items-center z-10 sm:hidden">
+    <div class="fixed top-0 h-full grid place-items-center z-10 sm:hidden ">
         <img src="assets/Light.webp" alt="upper shine light" class="h-full w-auto opacity-80 ">
     </div>
 

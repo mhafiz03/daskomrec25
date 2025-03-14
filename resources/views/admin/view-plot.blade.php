@@ -116,7 +116,6 @@
                         class="bg-white border border-biru-tua rounded-[30px] px-3 py-1 text-sm sm:text-base"
                     >
                         <option value="">No Sorting</option>
-                        <option value="shiftNo">Shift No</option>
                         <option value="date">Date</option>
                         <option value="time">Time</option>
                         <option value="remainingQuota">Remaining Quota</option>

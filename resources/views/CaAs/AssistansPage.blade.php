@@ -16,13 +16,16 @@
     @for ($i = 1; $i <= 87; $i++)
         <link rel="preload" href="{{ asset("assets/profilasisten/Asisten ($i).webp") }}" as="image">
     @endfor
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />    
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script defer src="{{ asset('js/slider2.js') }}"></script>
 </head>
+
 <body
     class="bg-AssistantsPage bg-cover bg-fixed bg-no-repeat min-h-screen max-w-full scroll-x-hide text-white overflow-hidden">
 
@@ -51,13 +54,15 @@
                     <h1 class="text-2xl font-crimson-text pb-2">Daskom Laboratory</h1>
                     <h1 class="text-4xl">Assistants 2025</h1>
                 </div>
-                <div class="owl-carousel owl-theme justify-evenly mx-auto mb-8 -translate-x-4" id="carouselContainer">
-                    <div class="relative w-[380px] mx-auto -translate-y-14" id="firstCard">
-                        <img src="{{ asset("assets/profilasisten/Asisten (1).webp") }}" alt="Assistant" class="w-[200px]">
+                <div class="owl-carousel owl-theme justify-evenly mx-auto mb-8" id="carouselContainer">
+                    <div class="relative w-[380px] mx-auto -translate-y-14 sm:-translate-x-12 md:translate-x-0" id="firstCard">
+                        <img src="{{ asset('assets/profilasisten/Asisten (1).webp') }}" alt="Assistant"
+                            class="w-[200px]">
                     </div>
                     @for ($i = 2; $i <= 87; $i++)
-                        <div class="relative w-[380px] mx-auto">
-                            <img src="{{ asset("assets/profilasisten/Asisten ($i).webp") }}" alt="Assistant" class="w-[200px]" >
+                        <div class="relative w-[380px] mx-auto sm:-translate-x-12 md:translate-x-0">
+                            <img src="{{ asset("assets/profilasisten/Asisten ($i).webp") }}" alt="Assistant"
+                                class="w-[200px]">
                         </div>
                     @endfor
                 </div>
@@ -65,7 +70,8 @@
                     <button class="owl-prev py-1 hover:scale-105 hover:brightness-110 active:scale-95" type="button">
                         <img src="assets/Prev.webp" alt="Prev" class="h-[60px]">
                     </button>
-                    <button class="owl-next py-1 hover:scale-105 hover:brightness-110 active:scale-95" type="button" onclick="moveCardDown()">
+                    <button class="owl-next py-1 hover:scale-105 hover:brightness-110 active:scale-95" type="button"
+                        onclick="moveCardDown()">
                         <img src="assets/Next.webp" alt="Next" class="h-[60px]">
                     </button>
                 </div>
@@ -75,6 +81,25 @@
 
     <x-sidebar></x-sidebar>
     <x-home-button></x-home-button>
+    <script>
+        $(".owl-carousel").owlCarousel({
+            center: true,
+            autoWidth:true, 
+            loop: true,
+            margin: 10, 
+            responsive: {
+                0: {
+                    items: 1, // Show 1 item on small screens (e.g., mobile)
+                },
+                768: {
+                    items: 2, // Show 2 items on tablets
+                },
+                1024: {
+                    items: 3, // Show 3 items on larger screens (e.g., desktops)
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -9,7 +9,7 @@
     class="fixed top-0 left-0 z-40 w-[50%] md:w-[20%] lg:w-[20%] h-screen bg-black bg-opacity-50 transition-transform -translate-x-full"
     aria-label="Sidebar">
     <div class="h-full px-3 overflow-y-auto opacity-90 scrollbar-hidden">
-        <h1 class="text-white text-center text-2xl mb-2 mt-8 font-semibold">Account</h1>
+        <h1 class="text-white text-center text-2xl mb-2 mt-8 font-im-fell-english font-semibold">Account</h1>
         <ul class="space-y-1 font-medium">
             <li class="h-16 max-w-[232px] mx-auto">
                 <a href="/profile" class="flex items-center justify-center p-2 text-gray-200 rounded-lg h-full">
@@ -30,7 +30,7 @@
 
         <!-- Recruitment Section -->
         @if ($config && ($config->pengumuman_on || $config->isi_jadwal_on || $config->role_on))
-            <h1 class="text-white text-center text-2xl mt-4 mb-2 font-semibold">Recruitment</h1>
+            <h1 class="text-white text-center text-2xl mt-4 mb-2 font-im-fell-english font-semibold">Recruitment</h1>
         @endif
 
         <ul class="space-y-1 font-medium">
@@ -64,7 +64,7 @@
                 </li>
             @endif
         </ul>
-        <h1 class="text-white text-center text-2xl mt-4 mb-2 font-semibold">Contacts</h1>
+        <h1 class="text-white text-center text-2xl mt-4 mb-2 font-im-fell-english font-semibold">Contacts</h1>
         <ul class="space-y-1 font-medium">
             <li class="h-16 max-w-[232px] mx-auto">
                 <a href="/assistants" class="flex items-center justify-center p-2 text-gray-200 rounded-lg h-full">

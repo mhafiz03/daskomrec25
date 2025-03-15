@@ -16,7 +16,7 @@
         <thead>
             <tr>
                 <th>No.</th>
-                <th>Shift No.</th>
+                <th>Shift</th>
                 <th>Date</th>
                 <th>Time</th>
                 <th>Remaining Quota</th>

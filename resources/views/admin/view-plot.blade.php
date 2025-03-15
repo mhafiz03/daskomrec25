@@ -23,7 +23,7 @@
         <!-- Tombol Back -->
         <div>
             <a 
-                href="javascript:history.back()" 
+                href="{{ route('admin.shift') }}"
                 class="bg-biru-tua text-white rounded-[30px] 
                        px-4 py-3 sm:px-6 sm:py-4 
                        hover:opacity-90 hover:shadow-lg transition
@@ -116,7 +116,6 @@
                         class="bg-white border border-biru-tua rounded-[30px] px-3 py-1 text-sm sm:text-base"
                     >
                         <option value="">No Sorting</option>
-                        <option value="shiftNo">Shift No</option>
                         <option value="date">Date</option>
                         <option value="time">Time</option>
                         <option value="remainingQuota">Remaining Quota</option>

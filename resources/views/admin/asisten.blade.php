@@ -373,7 +373,7 @@ function manageAsisten() {
 
     <!-- Judul Halaman -->
     <h1 class="text-center text-white text-3xl sm:text-4xl md:text-5xl font-im-fell-english mt-4">
-        Manage Asisten
+        Manage Admin
     </h1>
 
     <!-- Tombol utama -->
@@ -386,7 +386,7 @@ function manageAsisten() {
                        hover:opacity-90 hover:shadow-lg transition w-full"
                 @click="isSetOpen = true"
             >
-                Set Asisten
+                Set Admin
             </button>
             <!-- Add Asisten -->
             <button
@@ -395,7 +395,7 @@ function manageAsisten() {
                        hover:opacity-90 hover:shadow-lg transition w-full"
                 @click="isAddOpen = true"
             >
-                Add Asisten Account
+                Add Admin Account
             </button>
             <!-- Import Excel -->
             <!-- <button
@@ -490,9 +490,9 @@ function manageAsisten() {
                         x-model="sortKey"
                     >
                         <option value="">No Sort</option>
-                        <option value="kodeAsisten">Kode Asisten</option>
+                        <option value="kodeAsisten">Kode Admin</option>
                         <option value="nama_lengkap">Nama Lengkap</option>
-                        <option value="divisi">Divisi</option>
+                        <!-- <option value="divisi">Divisi</option> -->
                     </select>
                 </div>
                 <!-- Order Asc/Desc -->
@@ -523,16 +523,16 @@ function manageAsisten() {
                         </th>
                         <!-- Kode Asisten -->
                         <th class="py-3 px-3 border-r border-black text-biru-tua font-im-fell-english text-sm sm:text-base md:text-lg">
-                            Kode Asisten
+                            Username Admin
                         </th>
                         <!-- Nama Lengkap -->
                         <th class="py-3 px-3 border-r border-black text-biru-tua font-im-fell-english text-sm sm:text-base md:text-lg">
                             Nama Lengkap
                         </th>
                         <!-- Divisi -->
-                        <th class="py-3 px-3 border-r border-black text-biru-tua font-im-fell-english text-sm sm:text-base md:text-lg">
+                        <!-- <th class="py-3 px-3 border-r border-black text-biru-tua font-im-fell-english text-sm sm:text-base md:text-lg">
                             Divisi
-                        </th>
+                        </th> -->
                         <!-- Action -->
                         <th class="py-3 px-3 text-biru-tua font-im-fell-english text-sm sm:text-base md:text-lg">
                             Action
@@ -557,10 +557,10 @@ function manageAsisten() {
                                 x-text="asisten.nama_lengkap"
                             ></td>
                             <!-- Divisi -->
-                            <td 
+                            <!-- <td 
                                 class="py-3 px-3 border-r border-black text-biru-tua font-im-fell-english text-sm sm:text-base"
                                 x-text="asisten.divisi"
-                            ></td>
+                            ></td> -->
                             <!-- Action -->
                             <td class="py-3 px-3 text-biru-tua font-im-fell-english text-sm sm:text-base">
                                 <div class="flex flex-wrap gap-2">
@@ -645,11 +645,11 @@ function manageAsisten() {
             </h2>
             <hr class="border-white/50 mb-6" />
 
-            <p class="text-xl sm:text-2xl mb-2">Kode Asisten</p>
+            <p class="text-xl sm:text-2xl mb-2">Username Admin</p>
             <input 
                 type="text" 
                 class="w-full bg-custom-gray rounded-2xl p-4 mb-4 text-biru-tua"
-                placeholder="Enter Kode Asisten..."
+                placeholder="Enter Username Admin..."
                 x-model="setKode"
             >
 
@@ -695,7 +695,7 @@ function manageAsisten() {
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <!-- Kode Asisten -->
                 <div>
-                    <label class="block text-xl mb-1">Kode Asisten</label>
+                    <label class="block text-xl mb-1">Username Admin</label>
                     <input 
                         type="text"
                         class="w-full bg-custom-gray rounded-2xl p-3 text-biru-tua"
@@ -714,7 +714,7 @@ function manageAsisten() {
                     >
                 </div>
                 <!-- Divisi -->
-                <div>
+                <!-- <div>
                     <label class="block text-xl mb-1">Divisi</label>
                     <select
                         class="w-full bg-custom-gray rounded-2xl p-3 text-biru-tua"
@@ -725,7 +725,7 @@ function manageAsisten() {
                             <option :value="d" x-text="d"></option>
                         </template>
                     </select>
-                </div>
+                </div> -->
                 <!-- Password -->
                 <div>
                     <label class="block text-xl mb-1">Password</label>
@@ -771,10 +771,10 @@ function manageAsisten() {
             <hr class="border-white/50 mb-6" />
 
             <p class="text-xl sm:text-2xl mb-2">
-                Format file: (Kode Asisten, Nama Lengkap, Divisi, etc.)
+                Format file: (Kode Asisten, Nama Lengkap, etc.)
             </p>
             <div class="bg-custom-gray rounded-2xl p-4 sm:p-6 mb-4 text-biru-tua">
-                <p>Kode, Nama, Divisi...</p>
+                <p>Kode, Nama...</p>
             </div>
 
             <!-- Pilih File -->
@@ -829,7 +829,7 @@ function manageAsisten() {
                 <div class="space-y-3 text-lg">
                     <p><strong>Kode Asisten:</strong> <span x-text="selectedAsisten.kodeAsisten"></span></p>
                     <p><strong>Nama Lengkap:</strong> <span x-text="selectedAsisten.nama_lengkap"></span></p>
-                    <p><strong>Divisi:</strong> <span x-text="selectedAsisten.divisi"></span></p>
+                    <!-- <p><strong>Divisi:</strong> <span x-text="selectedAsisten.divisi"></span></p> -->
                 </div>
             </template>
         </div>
@@ -879,7 +879,7 @@ function manageAsisten() {
                         >
                     </div>
                     <!-- Divisi -->
-                    <div class="sm:col-span-2">
+                    <!-- <div class="sm:col-span-2">
                         <label class="block text-xl mb-1">Divisi</label>
                         <select
                             class="w-full bg-custom-gray rounded-2xl p-3 text-biru-tua"
@@ -890,7 +890,7 @@ function manageAsisten() {
                                 <option :value="d" x-text="d"></option>
                             </template>
                         </select>
-                    </div>
+                    </div> -->
                 </div>
             </template>
 

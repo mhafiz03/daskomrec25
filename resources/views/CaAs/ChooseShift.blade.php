@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script>
         function manageShift() {
@@ -89,11 +89,21 @@
     @if(session('error') || session('success'))
         <x-notification />
     @endif
+
+@php
+    use Illuminate\Support\Facades\Auth;
+    $user = Auth::user();
+    $stageName = match($user->caasStage->stage->name) {
+        'Teaching Test' => 'Teaching Test',
+        'Coding & Writing Test' => 'Coding & Writing Test',
+        default => 'Interview'
+    };
+@endphp
     <div class="bg-black bg-opacity-50 w-screen h-screen fixed inset-0 -z-10"></div>
     <div class="w-full h-full z-30 font-im-fell-english overflow-hidden">
         <div class="inset-0 text-white text-center mt-12">
             <h2 class="font-crimson-text text-lg lg:text-xl md:text-xl pb-1 font-bold">Discover The Light Within</h2>
-            <h1 class="text-2xl md:text-3xl lg:text-3xl">Choose Your Shift For Interview</h1>
+            <h1 class="text-2xl md:text-3xl lg:text-3xl mx-5">Choose Your Shift For {{ $stageName }}</h1>
         </div>
         <!-- Tabel Shift -->
         <div x-data="manageShift()"
